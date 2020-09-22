@@ -69,7 +69,6 @@ export class TenantAuthController extends BaseController {
 
     findByQueryParams(req, res, next) {
         debug('findByQueryParams()');
-        debug(req);
 
         if (req.query && req.query.status) {
             
@@ -88,7 +87,6 @@ export class TenantAuthController extends BaseController {
 
     findAll(req, res, next) {
         debug('findAll()');
-        debug(req);
 
         const limit = _.defaultTo(req.query.limit, DEFAULT_DATA_SIZE.LIMIT);
         const page = _.defaultTo(req.query.page, DEFAULT_DATA_SIZE.PAGE);
@@ -111,7 +109,6 @@ export class TenantAuthController extends BaseController {
 
     findByStatus(req, res, next) {
         debug('findByStatus()');
-        debug(this.repository);
 
         const status = _.defaultTo(req.query.status, 'Active');
         const limit = _.defaultTo(req.query.limit, DEFAULT_DATA_SIZE.LIMIT);
@@ -135,7 +132,6 @@ export class TenantAuthController extends BaseController {
 
     findByBaseUrl(req, res, next) {
         debug('findByBaseUrl()');
-        debug(req);
 
         const baseUrl = _.defaultTo(req.query.baseUrl, 'https://rest.apisandbox.zuora.com');
         const limit = _.defaultTo(req.query.limit, DEFAULT_DATA_SIZE.LIMIT);
@@ -159,7 +155,6 @@ export class TenantAuthController extends BaseController {
 
     findById(req, res, next) {
         debug('findById()');
-        debug(req);
 
         const id = req.params.id;        
 
@@ -182,7 +177,6 @@ export class TenantAuthController extends BaseController {
 
     findByEntityName(req, res, next) {
         debug('findByEntityName()');
-        debug(req);
 
         const entityName = req.params.entityName;
         const requiredOnly = _.defaultTo(req.query.requiredOnly, true);

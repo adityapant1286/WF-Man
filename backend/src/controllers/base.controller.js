@@ -172,7 +172,6 @@ export class BaseController {
 
     findByStatus(req, res, next) {
         debug('BaseController.findByStatus()');
-        debug(this.repository);
 
         const status = _.defaultTo(req.query.status, 'Active');
         const limit = _.defaultTo(req.query.limit, DEFAULT_DATA_SIZE.LIMIT);

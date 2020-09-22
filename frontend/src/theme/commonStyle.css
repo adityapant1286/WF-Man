@@ -1,0 +1,136 @@
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.animate__fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;  
+}
+
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.animate__fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;  
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate__fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+
+.show-it {
+    display: block !important;
+}
+
+.show-step-tenant-input {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    display: block !important;
+}
+
+.hide-it {
+    display: none !important;
+}
+
+.hide-step-tenant-input {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+    display: none !important;
+}
